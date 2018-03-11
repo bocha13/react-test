@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 import './App.css';
 
 class App extends Component {
@@ -27,7 +27,7 @@ class App extends Component {
     const filteredMonsters = this.state.monsters.filter(monster => {
       return monster.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
     });
-    if (this.state.monsters.length === 0) {
+    if (!this.state.monsters.length) {
       return <h1>Loading</h1>
     } 
     else {
