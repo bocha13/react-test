@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'MRROBOT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('MRROBOT'), url('./mrrobot-webfont.woff') format('woff');
+}
+
+h1 {
+  font-family: 'MRROBOT';
+  color: cyan;
+}
